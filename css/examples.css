@@ -328,6 +328,26 @@ h1.badge.velocity:after {
 	background-color: #38ced7;
 }
 
+#triangle_down {
+    width: 0px;
+    height: 0px;
+    border-style: inset;
+	border-width: 100px 100px 0 100px;
+	border-color: #007bff transparent transparent transparent;
+    float: left;
+
+}  
+
+#triangle_down p {
+    text-align: center;
+    top: -60px;
+    left: -47px;
+    color: white;
+    position: relative;
+    width: 93px;
+    height: 93px;
+    margin: 0px;
+}
 
 .floateed{
 
@@ -335,7 +355,7 @@ h1.badge.velocity:after {
   height:100%;
 
   background-color: red;
--webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 51% 100%, 0 81%);
+-webkit-clip-path: polygon(100% 0, 100% 69%, 49% 100%, 0 66%, 0 0);
 
 }
 
