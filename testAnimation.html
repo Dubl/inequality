@@ -33,19 +33,13 @@
 
 
 </head>
-	<ul id="menu"></ul>
-	<div id="content-wrapper">
-		<div id="example-wrapper">
-			<div class="scrollContent">
-
-				<section class="demo">
-					<div class="spacer s2"></div>
-					<div class="spacer s0" id="trigger"></div>
+			<div class="spacer s4"></div>
+			<div class="spacer s0" id="trigger"></div>
 					<div id="imagesequence">
 						<img id="myimg"/><br>
-						<a href="#" class="viewsource">view source</a>
 					</div>
-					<div class="spacer s2"></div>
+					
+			<div class="spacer s6"></div>					
 					<script>
 						// define images
 						var images = [
@@ -79,7 +73,7 @@
 						var controller = new ScrollMagic.Controller();
 
 						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 300})
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 0})
 										.setTween(tween)
 										.addIndicators() // add indicators (requires plugin)
 										.addTo(controller);
@@ -89,11 +83,7 @@
 							scene.duration($(this).val());
 						});
 					</script>
-				</section>
-				<div class="spacer s_viewport"></div>
-			</div>
-		</div>
-	</div>
+
 	<script type="text/javascript" src="js/tracking.js"></script>
 </body>
 </html>
