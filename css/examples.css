@@ -328,17 +328,40 @@ h1.badge.velocity:after {
 	background-color: #38ced7;
 }
 
-#triangle_down {
+#triangle_down { 
+	position: absolute;
     width: 0px;
     height: 0px;
     border-style: inset;
 	border-width: 100px 100px 0 100px;
 	border-color: #007bff transparent transparent transparent;
-    float: left;
-
+    left: 50%;
+    margin-right: -50%;
 }  
 
 #triangle_down p {
+    text-align: center;
+    top: -60px;
+    left: -47px;
+    color: white;
+    position: relative;
+    width: 93px;
+    height: 93px;
+    margin: 0px;
+}
+  
+#triangley_down { 
+	position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: inset;
+	border-width: 100px 100px 0 100px;
+	border-color: #953543 transparent transparent transparent;
+    left: 50%;
+    margin-right: -50%;
+}  
+
+#triangley_down p {
     text-align: center;
     top: -60px;
     left: -47px;
