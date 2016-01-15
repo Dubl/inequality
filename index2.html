@@ -41,24 +41,31 @@
 					
 					<!-- This section Jon will work on Dec 17 Changing this line for conflict-->
 					<!-- this is another change -->
+
+						<div id="triangley_down">
+						 
+						<p>four</p>          
+						</div>
+
+
+
 					
 						<div id="triangle_down">
 						 
 						<p>THREE</p>          
 						</div>       
 						
-						<div id="triangley_down">
-						 
-						<p>four</p>          
-						</div>
+
 						
 						
                    </div>
 					<script> 
+
+
 					var tween = new TimelineMax ()
 							.add([
-								TweenMax.fromTo("#triangle_down", 5, {y: 600, width: 5, x:0}, {y:50, width: 500, x: -500, ease: Linear.easeNone}),
-								TweenMax.fromTo("#triangley_down", 5, {y: 700}, {y:0, ease: Linear.easeNone})  
+								TweenMax.fromTo("#triangle_down", 5, {y: 60, width: 5, x:0}, {y:2000, width: 500, x: -500, ease: Linear.easeNone}),  
+								TweenMax.fromTo("#triangley_down", 5, {y: 700}, {y:0, ease: Linear.easeNone})
 							]);
 
 						// build scene
@@ -66,6 +73,8 @@
 										.setTween(tween)
 										.addIndicators() // add indicators (requires plugin)
 										.addTo(controller);
+
+
 					</script>
 
 	<script type="text/javascript" src="js/tracking.js"></script>
