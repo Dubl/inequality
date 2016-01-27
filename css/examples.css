@@ -340,13 +340,16 @@ h1.badge.velocity:after {
 	background-color: #38ced7;
 }
 
+  
+
+
 #triangle_down { 
 	position: absolute;
     width: 0px;
     height: 0px;
     border-style: inset;
-	border-width: 100px 100px 0 100px;
-	border-color: #007bff transparent transparent transparent;
+	border-width: 0 250px 100px 250px;
+	border-color: transparent transparent #007bff transparent;
     left: 50%;
     margin-right: -50%;
 }  
@@ -367,8 +370,8 @@ h1.badge.velocity:after {
     width: 0px;
     height: 0px;
     border-style: inset;
-	border-width: 100px 100px 0 100px;
-	border-color: #953543 transparent transparent transparent;
+	border-width: 0 250px 150px 250px;
+	border-color: transparent transparent #953543 transparent ;
     left: 50%;
     margin-right: -50%;
 }  
@@ -1213,4 +1216,25 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 .hljs-chunk {
   color: #aaa
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
 }
