@@ -7,7 +7,7 @@ body {
 	
 font-family: "Source Sans Pro", Arial, sans-serif;
 	
-background-color: #c7e1ff;
+background-color: #93dd00;
 	
 font-size: 13px;
 	
@@ -97,3 +97,87 @@ html[xmlns] .clearfix {
 * html .clearfix {
     height: 1%;
 }
+
+/* Styles for index.html as stysle from example.css are used or they are identified as needed
+they are moved over here */
+
+/* containters */
+
+#content-wrapper, #example-wrapper {
+	height: 100%;
+}
+
+		/* need to keep titlechart visable */
+#example-wrapper.horizontal {
+	white-space: nowrap;
+	font-size: 0;  /* fix for spaces between inline block divs */
+}
+
+#example-wrapper .scrollContent {
+	height: 100%;
+}
+
+
+/* Header Navigation */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #005c5c;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+		/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+nav a:visited {	
+	text-decoration: none;	
+	color: #fff;
+}
+
+/* titlechart */
+
+section#titlechart {
+	text-align: center;
+	position: relative;
+	height: 100%;
+	min-height: 500px;
+	min-width: 100%;
+	height: 100vh;
+}
+
+section#titlechart #description {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: -150px auto auto -300px;
+}
+
+section#titlechart img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+
+
+
+
+
+
+
