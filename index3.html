@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=500" />
+	<meta name="keywords" content="ScrollMagic, example, scrolling, attaching, scrollbar, anchor, link, in-page, navigation, hash" />
+	<title>Inequality</title>
+
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/examples.css" type="text/css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/lib/highlight.pack.js"></script>
+	<script type="text/javascript" src="js/lib/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+     	
+	<script type="text/javascript" src="js/ScrollMagic.js"></script>
+
+	<!--these were in the example -->
+	<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+	<script type="text/javascript" src="js/gsap/TweenMax.js"></script>    
+	<script type="text/javascript" src="js/plugins/animation.gsap.js"></script>    	
+	
+	<!-- for annimating -->
+	
+
+
+
+</head>      
+<body>
+			<script type="text/javascript" src="js/plugins/debug.addIndicators.js"></script>  
+
+				<section class="demo" id="section-wipes">
+					<style type="text/css">
+						.panel {
+							height: 100%;
+							width: 100%;
+						}
+						.panel.green {
+							margin-bottom: 400px
+						}
+					</style>
+
+
+
+
+<section class="panel green">
+	<b>how much does the 1% owe you?
+scroll to find out
+</b>
+           
+</section>
+
+<section class="panel bordeaux">
+ 
+	<b>
+over the last 60 years the US economy has
+GROWN</b>
+</section>
+
+<section class="panel blue">
+	<b>For thre first half as your productivity increased, your income increased.</b>
+</section>
+
+<section class="panel turqoise">
+	<b>but then wages stagnated</b>
+</section>
+
+<section class="panel green">
+	<b>graph</b>
+</section>
+
+<section class="panel bordeaux">
+	<b>where did all this money go?!</b>
+</section>
+
+<section class="panel blue">
+	<b>into the pockets of the 1%</b>
+</section>
+
+<section class="panel turqoise">
+	<b>so what?</b>
+</section>
+
+<section class="panel green">
+	<b>what does this mean for you?</b>
+</section>
+
+<section class="panel bordeaux">
+	<b>what is your net worth? what is your income?</b>
+</section>
+
+<section class="panel blue">
+	<b>your wealth should be: your income should be:</b>
+</section>
+
+<section class="panel green">
+	<b>the 1% owe you $111,589</b>
+</section>
+
+<section class="panel turqoise">
+	<b>get your money back! sign the petition</b>
+</section>
+
+</section>
+					<script>
+						$(function () { // wait for document ready
+							// init
+							var controller = new ScrollMagic.Controller({
+								globalSceneOptions: {
+									triggerHook: 'onLeave'
+								}
+							});
+
+							// get all slides
+							var slides = document.querySelectorAll("section.panel");
+
+							// create scene for every slide
+							for (var i=0; i<slides.length; i++) {
+								new ScrollMagic.Scene({
+										triggerElement: slides[i]
+									})
+									.setPin(slides[i])
+									.addIndicators() // add indicators (requires plugin)
+									.addTo(controller);
+							}
+						});
+					</script>
+
+	<script type="text/javascript" src="js/tracking.js"></script>
+
+</body>
+</html>
