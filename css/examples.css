@@ -1082,14 +1082,25 @@ a.viewsource:before {
 	background-image: url("../img/example_bg_spacer_h.gif");
 }
 .demo#section-slides .panel > b, .demo#section-wipes .panel > b {
-	font-size: 15px;
+	font-size: 100px;
 	color: white;
 	position: relative;
 	display: block;
 	height: 0;
 	overflow: visible;
-	top: 50%;
+	top: 8%;
 }
+.demo#section-slides .panel > p, .demo#section-wipes .panel > p {
+	font-size: 50px;
+	color: white;
+	position: relative;
+	display: block;
+	height: 0;
+	overflow: visible;
+	top: 4%;
+}
+
+
 
 /*
 
