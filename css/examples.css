@@ -1100,7 +1100,15 @@ a.viewsource:before {
 	top: 4%;
 }
 
-
+.demo#section-slides .panel > div, .demo#section-wipes .panel > div {
+    background-color: lightgrey;
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 100%;
+    position-anchor: 100% 100%;
+    position: relative;
+}
 
 /*
 
