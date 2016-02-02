@@ -118,14 +118,8 @@ section#titlechart #description ol {
 */
 
 
-section.demo * {
-	font-size: 13px;
-}
-section.demo {
-	font-size: 0;
-	text-align: center;
-	background-image: url("../img/example_bg_v.png");
-}
+
+/*
 section.demo.fullheight {
 	min-height: 100%;
 }
@@ -414,9 +408,7 @@ h1.badge.velocity:after {
 .brown {
 	background-color: #a66f28;
 }
-.bordeaux {
-	background-color: #953543;
-}
+
 .skin {
 	background-color: #ED9F4C;
 }
@@ -429,9 +421,11 @@ h1.badge.velocity:after {
 .red {
 	background-color: #cf3535;
 }
+/*
 .green {
 	background-color: #22d659;
 }
+*/
 .orange {
 	background-color: #ea6300;
 }
@@ -528,7 +522,7 @@ form fieldset legend {
 
 /*
 	MENU
-*/
+*/h1
 
 ul#menu, ul#menu ul {
 	list-style: none;
@@ -1075,12 +1069,15 @@ a.viewsource:before {
 	width: 100%;
 	background-image: none;
 }
+/*
 .demo#section-slides .panel, .demo#section-wipes .panel {
 	background-image: url("../img/example_bg_spacer_v.gif");
 }
+*/
 .demo#section-wipes #pinContainer .turqoise, .demo#section-wipes #pinContainer .green, .demo#section-slides #slideContainer .panel {
 	background-image: url("../img/example_bg_spacer_h.gif");
 }
+/*
 .demo#section-slides .panel > b, .demo#section-wipes .panel > b {
 	font-size: 100px;
 	color: white;
@@ -1109,6 +1106,7 @@ a.viewsource:before {
     position-anchor: 100% 100%;
     position: relative;
 }
+*/
 
 /*
 

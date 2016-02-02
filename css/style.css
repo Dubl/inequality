@@ -26,17 +26,11 @@ height: 100%
 
 
 h1, h2, h3, h4 {
-	font-family: "Josefin Slab", serif;
+	font-family: "Helvetica";
 }
 
-h1 {
-	
-font-style: italic;
-	
-font-weight: bold;
-	
-font-size: 30px;
-
+h1 {	
+	font-size: 30px;
 }
 
 h2 {
@@ -49,7 +43,7 @@ a, a:visited {
 	
 text-decoration: none;
 	
-color: #2e639e;
+color: #ccc;
 
 }
 
@@ -178,9 +172,78 @@ section#titlechart img.displayed {
     margin-right: auto }
 
 
+/* sections */
+.green {
+
+	background-image: url("img/white_triangle.png");
+	background-color: #93dd00;
+}
+
+.panel .green h1{
+
+	font-size: 50px;
+}
 
 
+section.triangle {
+	text-align: center;
+	position: relative;
+	height: 1370px;
+	max-width: 100%;
+	background-image: url("../img/growing.png");
+	background-repeat: no-repeat;
+}
+
+section.demo * {
+	font-size: 13px;
+}
+
+section.demo h1 {
+	font-size: 50px;
+	color: #003f3f;
+}
+section.demo {
+	font-size: 0;
+	text-align: center;
+}
+
+.grow {
+	background-color: #fff;
+	margin-top: -40px;
+	}
+
+.grow b {
+	text-align: left;
+	color:#93dd00;
+}
+
+section.demo .grow {
+	padding-left: 20px;
+	text-align: left;
+}
 
 
+/* Resize "GROWN" text for different screen sizes */
+@media only screen and (min-width: 320px) {
+
+   #section-wipes > div:nth-child(5) > section > b { 
+   		font-size: 60pt; 
+   		
+   	}
+
+}
+
+@media only screen and (min-width: 700px) {
+
+   #section-wipes > div:nth-child(5) > section > b { 
+   		font-size: 120pt; 
+}
+
+@media only screen and (min-width: 1000px) {
+
+      #section-wipes > div:nth-child(5) > section > b { 
+   		font-size: 160pt; 
+
+}
 
 
