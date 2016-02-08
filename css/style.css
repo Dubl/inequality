@@ -185,13 +185,22 @@ section#titlechart img.displayed {
 }
 
 
-section.triangle {
+section.growth {
 	text-align: center;
 	position: relative;
 	height: 1370px;
 	max-width: 100%;
-	background-image: url("../img/USeconomy.png");
+	background-image: url("../img/USeconomy2.png");
 	background-repeat: no-repeat;
+}
+
+section.darkgreen {
+	text-align: center;
+	position: relative;
+	max-width: 100%;
+	background-color: #005c5c;
+	margin-bottom: -20px;
+	padding: 10% 0 10% 0;
 }
 
 section.demo * {
@@ -216,6 +225,15 @@ section.demo {
 	text-align: left;
 	color:#93dd00;
 }
+
+.white {
+	background-color: #fff;
+}
+
+.transparent {
+	background-color: none;
+}
+
 
 section.demo .grow {
 	text-align: center;
@@ -243,14 +261,14 @@ section.demo .grow {
 @media only screen and (min-width: 1000px) {
 
       #section-wipes > div:nth-child(5) > section > b { 
-   		font-size: 700pt; 
+   		font-size: 600pt; 
 
 }
 }
 @media only screen and (min-width: 1300px) {
 
       #section-wipes > div:nth-child(5) > section > b { 
-   		font-size: 800pt;
+   		font-size: 700pt;
 
 }
 }
