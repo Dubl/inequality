@@ -198,9 +198,58 @@ section.darkgreen {
 	text-align: center;
 	position: relative;
 	max-width: 100%;
-	background-color: #005c5c;
+	background-color: #008e8e;
 	margin-bottom: -20px;
-	padding: 10% 0 10% 0;
+	padding: 10% 5% 10% 5%;
+}
+
+section.pink {
+	text-align: center;
+	position: relative;
+	max-width: 100%;
+	background-color: #e11e8c;
+	margin-bottom: -20px;
+	padding: 10% 5% 5% 5%;
+}
+
+section.pink h2{ 
+	color:#fff; 
+	font-size:10em;
+}
+
+@media only screen and (min-width: 320px) {
+
+	section.pink h2 { 
+		font-size:5em;
+	}
+
+}
+
+@media only screen and (min-width: 700px) {
+
+	section.pink h2 { 
+		font-size:8em;
+	}
+}
+
+section.whitescroll {
+	text-align: center;
+	position: relative;
+	max-width: 100%;
+	background-color: #fff;
+	margin-bottom: -40px;
+	padding: 10% 5% 10% 5%;
+
+}
+
+section.whitescroll h1{
+	font-family: 'Dorsa', sans-serif;
+	color: #93dd00 !important;
+	font-size: 18em !important;
+}
+
+section.pink img {
+margin-top: -300px;
 }
 
 section.demo * {
@@ -230,9 +279,49 @@ section.demo {
 	background-color: #fff;
 }
 
+
+.petition {
+	background-color: #fff;
+	margin-top: -60px;
+}
+
+.petition h2 {
+	color: #464646;
+	padding: 10%;
+	font-size: 5em;
+	font-family: 'helvetica';
+}
+
+@media only screen and (min-width: 320px) {
+
+	.petition  h2 { 
+		font-size:2em;
+	}
+
+}
+
+@media only screen and (min-width: 700px) {
+
+	.petition  h2 { 
+		font-size:3em;
+	}
+}
+
 .transparent {
 	background-color: none;
+	margin-top: -400px;
 }
+
+.turqoise {
+	background-color: #008e8e;
+	padding: 10% 5% 5% 5%;
+}
+
+.turqoise h1{
+	color: #fff !important;
+} 
+
+
 
 
 section.demo .grow {
