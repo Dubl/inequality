@@ -319,19 +319,49 @@
 	<p>The assets of your household (stocks, savings, retirement, house) 
 minus your liabilities (student loans, credit card debt, mortgage). 
 A rough guess is fine.</p>
+     	   <input id="firstbutton" class="input" type="text" name="q" id="field" autofocus>
+
 	<h2>What is your income?</h2>
 	<p>How much money does your household make in a year before taxes? Include the incomes of everyone in the house who works. A rough guess is fine.</p>
+     	   <input id="secondbutton" class="input" type="text" name="q" id="field" autofocus>
+
 </section>
 
+	<script>
 
+	$(document).ready("#firstbutton").keyup(function(e){
+	e.preventDefault();
+	var x = Number($("#firstbutton.input").val());     
+	console.log(x);
+	y=x+10;
+	$("#firstfield_name").text(y);
+
+	});
+
+	$(document).ready("#secondbutton").keyup(function(e){
+	e.preventDefault();
+	var x = Number($("#secondbutton.input").val());     
+	console.log(x);
+	y=x+100;
+	$("#secondfield_name").text(y);
+	$("#yo").text("The 1% owe you "+y);
+	});
+
+
+	</script>
 
 
 <section class="panel green">
-	<b>your wealth should be: your income should be:</b>
+	<b>your wealth should be:</b> 
+	  <div id="firstfield_name"></div>
+
+<b>your income should be:</b>
+
+	  <div id="secondfield_name"></div>
 </section>
 
 <section class="pink">
-	<h2>The 1% owe you $111,589</h2>
+	<h2 id="yo">The 1% owe you $111,589</h2>
 </section>
 
 <section class="panel petition">
