@@ -1062,6 +1062,12 @@ a.viewsource:before {
 	display: inline-block;
 }
 
+.demo#lilbox {
+height: 100px;
+width: 100px;
+color: white;
+}
+
 .demo#section-slides, .demo#section-wipes {
 	height: 100%;
 	width: 100%;

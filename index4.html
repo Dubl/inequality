@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=500" />
+	<meta name="keywords" content="ScrollMagic, example, scrolling, attaching, scrollbar, anchor, link, in-page, navigation, hash" />
+	<title>Inequality</title>
+
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/examples.css" type="text/css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/lib/highlight.pack.js"></script>
+	<script type="text/javascript" src="js/lib/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+     	
+	<script type="text/javascript" src="js/ScrollMagic.js"></script>
+
+	<!--these were in the example -->
+	<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+	<script type="text/javascript" src="js/gsap/TweenMax.js"></script>    
+	<script type="text/javascript" src="js/plugins/animation.gsap.js"></script>    	
+	
+	<!-- for annimating -->
+	
+
+
+
+</head>      
+<body>
+			<script type="text/javascript" src="js/plugins/debug.addIndicators.js"></script>  
+
+				<section class="demo" id="section-wipes">
+					<style type="text/css">
+						.panel {
+							height: 200%;
+							width: 100%;
+						}
+						.panel.green {
+							margin-bottom: 400px
+						}
+					</style>
+
+
+
+
+<section class="panel green" id="panelone">
+	<p>how much does the 1% owe you?</p>
+<b>
+scroll to find out
+</b>
+           
+</section>
+
+<section class="panel bordeaux" id="paneltwo">
+ 
+	<p>
+over the last 60 years the US economy has
+</p>
+<b>GROWN</b>
+</section>
+
+<section class="panel blue" id="panelthree">
+	<p>For the first half, as your productivity increased, your income increased.</p>
+<div id="lilbox"></div>
+</section>
+
+<section class="panel turqoise" id="panelfour">
+	<b>but then wages stagnated</b>
+</section>
+
+<section class="panel green" id="panelfive">
+	<b>graph</b>
+</section>
+
+<section class="panel bordeaux" id="panelsix">
+	<b>where did all this money go?!</b>
+</section>
+
+<section class="panel blue" id="panelseven">
+	<b>into the pockets of the 1%</b>
+</section>
+
+<section class="panel turqoise" id="paneleight">
+	<b>so what?</b>
+</section>
+
+<section class="panel green" id="panelnine">
+	<b>what does this mean for you?</b>
+</section>
+
+<section class="panel bordeaux" id="panelten">
+	<b>what is your net worth? what is your income?</b>
+</section>
+
+<section class="panel blue" id="paneleleven">
+	<b>your wealth should be: your income should be:</b>
+</section>
+
+<section class="panel green" id="paneltwelve">
+	<b>the 1% owe you $111,589</b>
+</section>
+
+<section class="panel turqoise" id="panelthirteen">
+	<b>get your money back! sign the petition</b>
+</section>
+
+</section>
+					<script>
+						$(function () { // wait for document ready
+							// init
+							var controller = new ScrollMagic.Controller({
+								globalSceneOptions: {
+									triggerHook: 'onLeave'
+								}
+							});
+
+
+							new ScrollMagic.Scene({triggerElement: "#panelone"})
+								.setPin("#panelone")
+								.addIndicators()
+								.addTo(controller);
+
+
+							new ScrollMagic.Scene({triggerElement: "#paneltwo"})
+								.setPin("#paneltwo")
+								.addIndicators()
+								.addTo(controller);
+
+
+
+							var slideinthree = TweenMax.to('#lilbox', 1, {left:'20%'});
+
+
+
+							new ScrollMagic.Scene({triggerElement: "#panelthree"})
+								.setPin("#panelthree")
+								.addIndicators()
+								.setTween(slideinthree)
+								.addTo(controller);
+
+
+							new ScrollMagic.Scene({triggerElement: "#panelfour"})
+								.setPin("#panelfour")
+								.addIndicators()
+								.addTo(controller);
+
+
+							new ScrollMagic.Scene({triggerElement: "#panelfive"})
+								.setPin("#panelfive")
+								.addIndicators()
+								.addTo(controller);
+
+
+							new ScrollMagic.Scene({triggerElement: "#panelsix"})
+								.setPin("#panelsix")
+								.addIndicators()
+								.addTo(controller);
+
+
+							new ScrollMagic.Scene({triggerElement: "#panelseven"})
+								.setPin("#panelseven")
+								.addIndicators()
+								.addTo(controller);
+
+
+							new ScrollMagic.Scene({triggerElement: "#paneleight"})
+								.setPin("#paneleight")
+								.addIndicators()
+								.addTo(controller);
+
+
+							new ScrollMagic.Scene({triggerElement: "#panelnine"})
+								.setPin("#panelnine")
+								.addIndicators()
+								.addTo(controller);
+
+
+							new ScrollMagic.Scene({triggerElement: "#panelten"})
+								.setPin("#panelten")
+								.addIndicators()
+								.addTo(controller);
+
+
+							new ScrollMagic.Scene({triggerElement: "#paneleleven"})
+								.setPin("#paneleleven")
+								.addIndicators()
+								.addTo(controller);
+
+
+							new ScrollMagic.Scene({triggerElement: "#paneltwelve"})
+								.setPin("#paneltwelve")
+								.addIndicators()
+								.addTo(controller);
+
+
+							new ScrollMagic.Scene({triggerElement: "#panelthirteen"})
+								.setPin("#panelthirteen")
+								.addIndicators()
+								.addTo(controller);
+
+						});
+					</script>
+
+	<script type="text/javascript" src="js/tracking.js"></script>
+
+</body>
+</html>
