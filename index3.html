@@ -313,28 +313,39 @@
 </section>
 
 <section class="panel turqoise">
-	<h1>Calculator</h1>
 
-	<h2 style="color:#fff">What is your net wealth?</h2>
-	<p style="color:#fff">The assets of your household (stocks, savings, retirement, house) 
+
+	<h1 style="color:#fff">What is your net wealth?</h1>
+	<h2 style="color:#fff">The assets of your household (stocks, savings, retirement, house) 
 minus your liabilities (student loans, credit card debt, mortgage). 
-A rough guess is fine.</p>
+A rough guess is fine.</h2>
      	   <input id="firstbutton" class="input" type="text" name="q" id="field" autofocus>
 
-	<h2 style="color:#fff">What is your income?</h2>
-	<p style="color:#fff">How much money does your household make in a year before taxes? Include the incomes of everyone in the house who works. A rough guess is fine.</p>
+	<h1 style="color:#fff">What is your income?</h1>
+	<h2 style="color:#fff">How much money does your household make in a year before taxes? Include the incomes of everyone in the house who works. A rough guess is fine.</h2>
      	   <input id="secondbutton" class="input" type="text" name="q" id="field" autofocus>
 
 </section>
 
 	<script>
 
+Number.prototype.formatMoney = function(c, d, t){
+var n = this, 
+    c = isNaN(c = Math.abs(c)) ? 2 : c, 
+    d = d == undefined ? "." : d, 
+    t = t == undefined ? "," : t, 
+    s = n < 0 ? "-" : "", 
+    i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", 
+    j = (j = i.length) > 3 ? j % 3 : 0;
+   return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+ };
+
 	$(document).ready("#firstbutton").keyup(function(e){
 	e.preventDefault();
 	var x = Number($("#firstbutton.input").val());     
 	console.log(x);
-	y=x+10;
-	$("#firstfield_name").text(y);
+	y=(x+10).formatMoney(0);
+	$("#firstfield_name").text("$"+y);
 
 	});
 
@@ -342,9 +353,9 @@ A rough guess is fine.</p>
 	e.preventDefault();
 	var x = Number($("#secondbutton.input").val());     
 	console.log(x);
-	y=x+100;
-	$("#secondfield_name").text(y);
-	$("#yo").text("The 1% owe you "+y);
+	y=(x+100).formatMoney(0);
+	$("#secondfield_name").text("$"+y);
+	$("#yo").text("The 1% owe you $"+y);
 	});
 
 
@@ -361,7 +372,7 @@ A rough guess is fine.</p>
 </section>
 
 <section class="pink">
-	<h2 id="yo">The 1% owe you $111,589</h2>
+	<h2 id="yo">"The 1% owe you "+y</h2>
 </section>
 
 <section class="panel petition">
