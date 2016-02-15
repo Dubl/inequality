@@ -59,7 +59,7 @@
 
 	<nav>
 		<ul>
-		  <li><a href="#">calculator</a></li>
+		  <li><a href="#calculator">calculator</a></li>
 		</ul>
 	</nav>
 
@@ -309,25 +309,48 @@
 <section class="panel turqoise">
 	<h1>What does this mean for you?</h1>
 	<img src="img/stickYou.png" height="300px" width="150px">
+	
 
 </section>
 
-<section class="panel turqoise">
+<section class="green2" id="calculator">
+<h1 >To find out...</h1>
+	<h1>Enter your net wealth:</h1>
 
-
-	<h1 style="color:#fff">What is your net wealth?</h1>
-	<h2 style="color:#fff">The assets of your household (stocks, savings, retirement, house) 
+     	   <input id="firstbutton" class="input" type="text" name="q" id="field" placeholder="$5,000" autofocus>
+	<h2>The assets of your household (stocks, savings, retirement, house) 
 minus your liabilities (student loans, credit card debt, mortgage). 
 A rough guess is fine.</h2>
-     	   <input id="firstbutton" class="input" type="text" name="q" id="field" placeholder="$5,000" autofocus>
+	<h1>Enter your income:</h1>
 
-	<h1 style="color:#fff">What is your income?</h1>
-	<h2 style="color:#fff">How much money does your household make in a year before taxes? Include the incomes of everyone in the house who works. A rough guess is fine.</h2>
      	   <input id="secondbutton" class="input" type="text" name="q" id="field" placeholder="$30,000" autofocus>
+	<h2>How much money does your household make in a year before taxes? Include the incomes of everyone in the house who works. A rough guess is fine.</h2>
+
+	<a href="#firstfield_name" class="button">Claculate</a>
 
 </section>
 
+<section class="green4">
+
+</section>
+
+
 	<script>
+
+		$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 5000, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
 
 Number.prototype.formatMoney = function(c, d, t){
 var n = this, 
@@ -344,7 +367,7 @@ var n = this,
 	e.preventDefault();
 	var x = Number($("#firstbutton.input").val());     
 	console.log(x);
-	y=(x+10).formatMoney(0);
+	y=(x+114483.11).formatMoney(0);
 	$("#firstfield_name").text("$"+y);
 
 	});
@@ -353,7 +376,7 @@ var n = this,
 	e.preventDefault();
 	var x = Number($("#secondbutton.input").val());     
 	console.log(x);
-	y=(x+100).formatMoney(0);
+	y=(x+11552.16).formatMoney(0);
 	$("#secondfield_name").text("$"+y);
 	$("#yo").text("The 1% owe you $"+y);
 	});
@@ -362,17 +385,21 @@ var n = this,
 	</script>
 
 
-<section class="pink">
+<section class="panel pink2">
 	<h1 style="color:#fff">your wealth should be:</h1> 
-	  <h1 id="firstfield_name" style="color:#fff"></h1>
+	  <h1 id="firstfield_name" style="color:#333"></h1>
 
 <h1 style="color:#fff">your income should be:</h1>
 
-	  <h1 id="secondfield_name" style="color:#fff"></h1>
+	  <h1 id="secondfield_name" style="color:#333"></h1>
+
+	  <p style="color:#fff">keep scrolling</p> 
 </section>
 
-<section class="pink">
-	<h2 id="yo"></h2>
+<section class="darkgreen"> 
+
+<h1 style="color:#fff">The 1% owe you:</h1>
+<h1 style="color:#93dd00; font-size:5em;">$144,483.11!!!<h1>
 </section>
 
 <section class="panel petition">

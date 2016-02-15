@@ -321,7 +321,70 @@ section.demo {
 	color: #fff !important;
 } 
 
+.green2 {
+	background-color: #93dd00;
+	padding: 10% 5% 10% 5%;
+		text-align: center;
+	position: relative;
+	max-width: 100%;
 
+}
+
+section.green2 h2{
+	padding: 0 20% 0 20%;
+	color: #333;
+	font-style: regular;
+	
+} 
+
+.green3 {
+	background-color: #93dd00;
+	padding: 10% 5% 12000px 5%;
+	margin-bottom: 12000px;
+		text-align: center;
+	position: relative;
+	max-width: 100%;
+	background-image: url("../img/mobg.png");
+}
+.green4 {
+	padding: 0 0 1000px 0;
+	position: relative;
+	max-width: 100%;
+	background-image: url("../img/transition.png");
+}
+
+.pink2 {
+	background-color: #e11e8c;
+	padding: 10% 5% 5% 5%;
+}
+
+.pink2 h1{
+	
+} 
+
+input[type="text"] {
+  padding: 10px;
+  border: solid 5px #008e8e;
+  transition: border 1s;
+  font-size: 2em;
+}
+input[type="text"]:focus,
+input[type="text"].focus {
+  border: solid 5px #fff;
+}
+
+.button {
+    background-color: #008e8e;
+    border: none;
+    color: #fff !important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5%;
+    cursor: pointer;
+}
 
 
 section.demo .grow {
